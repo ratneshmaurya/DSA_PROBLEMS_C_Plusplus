@@ -13,7 +13,7 @@ public:
             biggerLadder=max(biggerLadder,i+nums[i]);
             currentLadder--; //becoz moved ahead one step
             
-            if(currentLadder==0){
+            if(currentLadder==0) {
                 currentLadder=biggerLadder-i;
                 if(i>biggerLadder)return -1; //when 0 0 0 prr atka rhe currentLadder.
                 jump++;
