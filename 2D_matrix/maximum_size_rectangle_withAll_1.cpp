@@ -1,15 +1,9 @@
 
 // GFG passed solution
 
+//must see the difference in answers from leetcode and gfg.
 
-// { Driver Code Starts
-#include <bits/stdc++.h>
-using namespace std;
-#define MAX 1000
-
-
- // } Driver Code Ends
-/*You are required to complete this method*/
+//must see the difference in answers from leetcode and gfg.
 
 class Solution{
     private:
