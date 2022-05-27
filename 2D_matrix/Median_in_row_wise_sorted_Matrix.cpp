@@ -19,7 +19,7 @@ public:
                 int l=0,h=c-1;
                 while(l<=h){
                     int m=l+(h-l)/2;
-                    if(matrix[i][m]<=midval) l=m+1;
+                    if(matrix[i][m]<=midval) l=m+1; //important hai, see shifting left pointer to mid+1 agr equal(i.e matrix[i][m]=midVal) bhi hua hai toh
                     else h=m-1;
                 }
                 ans+=l;
