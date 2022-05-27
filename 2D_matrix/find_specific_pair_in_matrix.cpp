@@ -72,3 +72,38 @@ int findMaxValue(int mat[][N])
 
 // If we are allowed to modify of the matrix, we can avoid using extra space and use 
 // input matrix instead.
+
+
+
+
+
+
+// -------------------------------------------------------------------
+// -------------------------------------------------------------------
+// we can also do from top to bottom approach like this ----------
+
+
+// The idea is to pre-process the given matrix MAT and store the minimum element encountered so far 
+// in a new 2-D array. We take an extra 2-D matrix dp of size N x N and store the minimum element 
+// encountered  from MAT[0][0] to MAT[i][j] at dp[i][j]. Then the maximum value of the function maxVal 
+// is max(maxVa, MAT[i][j] - dp[i - 1][j - 1]).
+
+ 
+
+// Here is the algorithm :
+
+ 
+
+// We declare a 2-d matrix dp of size N x N.
+// We initially fill dp as follows:
+// dp[0][0] = MAT[0][0].
+// We run a loop for i = 1 to N.
+// d[i][0] = min(dp[i-1][0]’, ‘MAT[i][0])
+// We run a loop for j = 1 to N.
+// dp[0][j] = min(dp[0][j - 1], MAT[0][j])
+// We declare a variable maxVal to store our final answer and initialize it with the minimum possible value.
+// We run a loop for i = 1 to N:
+// We run a loop for j = 1 to N:
+// maxVal  = max(maxVal, MAT[i][j] - dp[i - 1][j - 1]).
+// dp[i][j] = min(dp[i-1][j], min(dp[i][j-1],mat[i][j])).
+// Finally, we return maxVal as our answer.
