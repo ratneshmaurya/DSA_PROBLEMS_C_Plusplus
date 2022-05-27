@@ -1,7 +1,8 @@
+//Approach 1 -- if want to use a sapce , then take an empty 2d matrix and simply copy given matrix ka row in the 
+//columnwise order in that empty matrix. 
 
-
-//IDEA===  We first transpose the given matrix, and then reverse the content of individual rows to
-//  get the resultant 90 degree clockwise rotated matrix.
+//Approach 2 (without using sapce)===  We first transpose the given matrix, and then reverse the content of individual rows to
+//get the resultant 90 degree clockwise rotated matrix.
 
 class Solution {
 public:
