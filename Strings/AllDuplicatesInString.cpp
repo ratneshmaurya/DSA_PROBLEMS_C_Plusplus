@@ -1,6 +1,6 @@
 
 // using maps
-// in gfg in all methods used space thus have time -O(N) and space-O(num of chars);
+// in gfg in all methods used space thus have time -O(N) and space-O(num of chars)
 #include <bits/stdc++.h>
 using namespace std;
 void printDups(string str)
