@@ -22,6 +22,12 @@ class GFG {
 // We can’t reach it.
 // The reference variable s1 still refers to the original string “java”.
 
+// if it was written like - s1=s1.concat("rules"), then s1 is referring to final string again thus s1 will now refer to
+// "java rules" not on "java" , i.e reference to "java" is now lost.
+
+// if it was written like--  String s1="java";  String s2=s1;   s1=s1.concat("rules");  ..... now here s1 will refer to 
+// final string i.e "java rules" and s2 is referring to "java" , thus both words are referred by some reference.
+
 // Almost every method, applied to a String object in order to modify it, creates a new String object. So, where do these 
 // String objects go? Well, these exist in memory, and one of the key goals of any programming language is to make efficient 
 // use of memory. As applications grow, it’s very common for String literals to occupy a large area of memory, which can even cause 
