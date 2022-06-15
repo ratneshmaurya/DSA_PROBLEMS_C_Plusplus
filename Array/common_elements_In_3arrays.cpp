@@ -6,6 +6,8 @@ class Solution
            //code here.
            vector<int>ans;
            
+
+           //storing all elements in this map 
            unordered_map<int,int>mp;
            //initial count the freq
            mp[A[0]]++;
