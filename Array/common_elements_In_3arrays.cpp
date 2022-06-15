@@ -11,6 +11,9 @@ class Solution
            mp[A[0]]++;
            mp[B[0]]++;
            mp[C[0]]++;
+
+        // as given every element is sorted in all arrays so we can use A[i]!=A[i-1] for checking the duplicacy
+
            for(int i=1;i<n1;i++){
                //for preventing duplicate
                if(A[i]!=A[i-1])
