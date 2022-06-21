@@ -10,7 +10,7 @@ class Solution
                 for(int i=l;i<=r;i++){
                     swap(S[i],S[l]);
                     helper(S,output,l+1,r);
-                    swap(S[i],S[l]);
+                    swap(S[i],S[l]); // backtracking concept, becoz vapas se same kr de rha
                 }
             }
         }
