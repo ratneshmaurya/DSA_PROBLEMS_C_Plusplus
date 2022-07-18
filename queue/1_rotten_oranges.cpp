@@ -1,3 +1,5 @@
+// NOTE -- it is a leetcode solution (problem 994)
+
 class Solution {
 public:
     int orangesRotting(vector<vector<int>>& grid) {
