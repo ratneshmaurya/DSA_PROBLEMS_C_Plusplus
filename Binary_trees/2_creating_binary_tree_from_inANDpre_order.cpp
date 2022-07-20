@@ -11,7 +11,7 @@ private:
         //fetching the mid position in inorder
         int mid=m[root->val];
         
-        //calling on both side
+        //calling on both side, calling first left side remember
         root->left=helper(preorder,inorder,preorderIndex,inStart,mid-1,m);
         root->right=helper(preorder,inorder,preorderIndex,mid+1,inEnd,m);
         return root;
