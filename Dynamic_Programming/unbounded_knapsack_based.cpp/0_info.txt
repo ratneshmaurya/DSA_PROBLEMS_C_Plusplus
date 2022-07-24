@@ -2,3 +2,6 @@ unbounded knapsack and cutting rods problems have two arrays given -- one for wi
 and we have to find the max prices hence we have done addition of value[i-1]
 
 in other questions, we are only given one array, see the minute code difference
+
+and whenever asked ---- number of ways or count of something, then recursive calls me addition hota mainly
+i.e we add all possible choices.
