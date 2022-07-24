@@ -11,12 +11,18 @@
 // Problem reduces to find no of subsets with given sum**
 
 
+//IMPORTANT ----
+
+//it is same as prevous question "count_num_of_subset_with_given_difference", in this what we have done it 
+// taken all that have positive before in s1 and -ive before in s2, and taken negative common from s2, thus
+//equation becomes s1-s2 must be equal to given target sum..... so it is like previous one... 
+
 //remember of handling zeros, becoz +0 and -0 will effect the same result so i have extracted 
 //the number of count of zeros and then we know that zeros ka kuchh subsets hoga khud ka so we 
 //have calculated the number of subset for zeros -- pow(2,countZeros) and did multiply with answer
 
 class Solution {
-public:
+    public:
         int subsetSum(vector<int>& a, int n, int sum,int countZero)
         {
             // Initializing the matrix
