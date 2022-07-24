@@ -1,0 +1,4 @@
+only knapsack have two arrays given -- one for wiegth and one for prices, 
+and we have to find the max prices hence we have done addition of value[i-1]
+
+in other questions, we are only given one array, see the minute code difference
