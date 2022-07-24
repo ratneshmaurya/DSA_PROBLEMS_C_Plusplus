@@ -1,7 +1,7 @@
 
 //as we know we can use the element again if we take it , and if we 
 //don't take it then we can't take it again any further
-//thus we pass "n" instead of "n-1" in recursion call if we take that element i.e t[i] instead of t[i-1]
+//thus we pass "n" instead of "n-1" in recursion call if we take that element i.e K[i] instead of K[i-1]
 
 
 int knapSack(int W, int wt[], int val[], int n)
@@ -20,7 +20,7 @@ int knapSack(int W, int wt[], int val[], int n)
             
             //if we take it
             else if (wt[i - 1] <= w)
-                K[i][w] = max(val[i - 1] + K[i - 1][w - wt[i]], K[i - 1][w]);
+                K[i][w] = max(val[i - 1] + K[i][w - wt[i-1]], K[i - 1][w]);
 
             //if we don't take it
             else
