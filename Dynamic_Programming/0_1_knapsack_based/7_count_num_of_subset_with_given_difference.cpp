@@ -39,7 +39,7 @@ int countWithGivenSum(int arr[ ], int n, int diff)
 {   
      int sum=0;
     for(int i=0;i<n;i++)
-         sum+=nums[i]
+         sum+=arr[i]
 	 
 	 int reqSum=(diff+sum)/2;
 	 return subsetSum(arr,n,reqSum);
