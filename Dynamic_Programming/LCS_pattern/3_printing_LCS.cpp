@@ -4,8 +4,8 @@ int main()
 {
     string str1 = "havoc";
     string str2 = "bhvct";
-    int m = str1.size();
-    int n = str2.size();
+    int m = str1.size();  //rows
+    int n = str2.size();  //cols
     // fill the dp table
     int dp[m + 1][n + 1];
     for(int i = 0; i <= m; i++)
