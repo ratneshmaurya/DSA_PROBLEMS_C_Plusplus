@@ -11,7 +11,7 @@ int longestCommonSubstr (string S1, string S2, int n, int m)
         //1st row only
         for(int i=0;i<=m;i++) dp[0][i]=0;  // if string length=0 ,then lcs=0;
         //1st column only
-        for(int i=0;i<=n;i++) dp[m][0]=0;  // if string length=0 ,then lcs=0;
+        for(int i=0;i<=n;i++) dp[i][0]=0;  // if string length=0 ,then lcs=0;
         
         int maxLength=INT_MIN;
         for(int i=1;i<=n;i++){
