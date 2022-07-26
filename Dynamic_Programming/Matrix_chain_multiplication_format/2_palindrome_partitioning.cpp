@@ -1,3 +1,21 @@
+
+//successfully submitted on leetcode, aditya verma ka exact wala TLE de rha tha
+
+//why we are writing only right recursion code ??
+// Here, we need to know minimum no.of cuts, no.of cuts will be minimised when there are palindromic 
+// sub-strings in the given original string. if there are no palindromic sub-strings in the given string, 
+// then every character will be considered as a palindrome of length of 1, then ans = str_len - 1. In this 
+// code first its checking whether left partition is palindrome or not. if its palindrome then only solving 
+// right part. Why to do so, if left partition is palindrome obviously no.of cuts will be minimised and our 
+// aim is also to know min no.of cuts that's why we are doing like this. Why to waste time on calculating left 
+// partition it's not palindrome. Even though we calculate for left partition(which is not palindrome) no.of 
+// cuts will be increased but that's not our aim is. So, it's not optimal to calculate for left partition
+// (which is not palindrome). You may get doubt that if left partition is not palindrome then this code will 
+// not solve for that case. Here, the thing is that case had been already solved in previous recursive calls, 
+// when k = 1 -> means during that previous recursion call, every character will be considered as a palindrome 
+// of length of 1 and min no.of cuts will be calculated. once try with these examples. S = "bcbade" <- 'bcb' as 
+// palindromic sub-string S = "abcde" <- all distinct characters.
+
 class Solution {
     private:
     //for checking palindrome of substrings formed
