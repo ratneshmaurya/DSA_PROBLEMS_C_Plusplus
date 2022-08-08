@@ -6,7 +6,6 @@
 // Output: 7
 // Explanation: There are 7 subarrays with a sum divisible by k = 5:
 // [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]
-
 // concept of prefix sum with all previous remainder
 //this type of concept also used in subarray_Sum_Equals_To_K_having_(+ive)_and_(-ive)_numbers both
 
@@ -35,6 +34,15 @@ public:
                 rem+=k;
             }
             if(m.find(rem)!=m.end()){
+                //doing count+=m[rem], becoz suppose rem=5 had came 2 times earlier, it means we have got 2 
+                //sequence earlier, but now if we got rem=5, it means we got 2 sequence more, that from first 
+                //rem=5 index to current index, and second from second rem=5 index to current index.
+                //hence adding '2' times(number of times this rem came earlier) in current value. 
+                //so till now we have 4 seqeunce that have rem=5;
+                //first from 0th index to first rem=5 index
+                //second from first rem=5 index to second rem=5 index
+                //third from first rem=5 index to third rem=5 index
+                //fourth from second rem=5 index to third rem=5 index
                 count+=m[rem];
                 m[rem]++;
             }
