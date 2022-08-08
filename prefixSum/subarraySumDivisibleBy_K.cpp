@@ -35,7 +35,7 @@ public:
             }
             if(m.find(rem)!=m.end()){
                 //doing count+=m[rem], becoz suppose rem=5 had came 2 times earlier, it means we have got 2 
-                //sequence earlier, but now if we got rem=5, it means we got 2 sequence more, that from first 
+                //sequence earlier, but now if we got again rem=5, it means we got 2 sequence more, that from first 
                 //rem=5 index to current index, and second from second rem=5 index to current index.
                 //hence adding '2' times(number of times this rem came earlier) in current value. 
                 //so till now we have 4 seqeunce that have rem=5;
