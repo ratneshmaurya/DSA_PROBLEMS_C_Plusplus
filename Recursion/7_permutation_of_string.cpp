@@ -32,29 +32,7 @@ class Solution
 
 
 //---------------------------------------------------------------------------------------
-//method2 - by sorting and skipping the same next caharcter
-class Solution
-{
-	public:
-    	void helpForPermute(string S, vector<string> &ans, int ind, int n){
-    	    if(ind == n-1){
-    	        ans.push_back(S);
-    	        return;
-    	    }
-    	    for(int i=ind;i<n;i++){
-    	        if(S[ind] == S[i] && ind != i)  continue;
-    	        swap(S[ind], S[i]);
-    	        helpForPermute(S, ans, ind+1, n);
-    	        
-    	    }
-	    }
-		vector<string> find_permutation(string S)
-		{
-		    vector<string> ans;
-		    int n = S.size();
-		    sort(S.begin(), S.end());
-		    helpForPermute(S, ans, 0, n);
-		    
-		    return ans;
-		}
-};
+//method2 - by sorting and next permutation
+// O(nlogn) due to sorting, can also be solved without recursion by next permutation 
+// method, we will start from the sorted order, then we will apply next permutation in that order 
+// for length! Times, becoz max number of permutation of a sequence is the factorial of length of sequence)
