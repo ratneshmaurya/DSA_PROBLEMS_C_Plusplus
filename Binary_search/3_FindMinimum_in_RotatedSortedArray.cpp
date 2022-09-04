@@ -1,7 +1,5 @@
-class Solution{
-public:
-    int findMin(int nums[], int n){
-        //complete the function here
+    int findMin(vector<int>& nums) {
+        int n=nums.size();
         int i=0;
         int j=n-1;
         int mid,next,prev;
@@ -13,9 +11,9 @@ public:
             mid=i+(j-i)/2;
             next=(mid+1)%n;
             prev=(mid-1+n)%n;
-            if(nums[mid]<nums[next]&& nums[mid]<nums[prev])return nums[mid];
+            if(nums[mid]<=nums[next]&& nums[mid]<=nums[prev])return nums[mid];
             else if(nums[i]>nums[mid])j=mid-1;
             else if(nums[mid]>nums[j])i=mid+1;
         }
+        return -1;
     }
-};
