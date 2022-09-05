@@ -39,6 +39,9 @@ public:
             v.push_back(minH.top().second);
             minH.pop();
         }
+
+        // reverse(v.begin(),v.end()); //// this line was important for this gfg condition,becoz our 
+        //heap will store the minimum freq's element at top, but gfg wants a little different way
         return v;
     }
 };
