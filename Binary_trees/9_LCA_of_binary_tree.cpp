@@ -21,6 +21,45 @@ class Solution
     }
 };
 
+//-------------------------------------------------------------------------------------------------
+//below solution done by me (myself), after some months
+
+// class Solution {
+// public:  
+//     TreeNode*ans;
+//     bool helper(TreeNode* root, TreeNode* p, TreeNode* q){
+//         if(root==NULL) return false;
+        
+//         //agar p and q mil jaaye then this node may be answer for lca.
+//         if(root==p||root==q){
+//             ans=root;
+//             return true;
+//         }
+//         bool leftans=helper(root->left,p,q);
+//         bool rightans=helper(root->right,p,q);
+        
+//         //agar laft and right dono trf se true aa rha it means this node is lca, store it in ans and return false so that no further become right condition for true;
+//         if(leftans&&rightans){
+//             ans=root;
+//             return false;
+//         }
+        
+//         //if we got only one true then return true becoz abhi second node search krna
+//         if(leftans||rightans){
+//             return true;
+//         }
+        
+//         //if we don't get any node from any side return false;
+//         return false;
+//     }
+//     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+//         helper(root,p,q);
+//         return ans;
+//     }
+// };
+
+
+//-----------------------------------------------------------------------------------------------------
 
 //below solution is also running fine -- pepcoding
 
