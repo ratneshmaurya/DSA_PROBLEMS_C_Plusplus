@@ -65,7 +65,8 @@ public:
      
         // handles digit at hundreds places (if any)
         out += numToWords(((n / 100) % 10), "hundred ");
-     
+
+        //only runs if n is greater than 100 and usme tens or ones place pr digits ho kuchh eg-128,783
         if (n > 100 && n % 100)
             out += "and ";
      
