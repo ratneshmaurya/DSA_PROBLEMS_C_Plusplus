@@ -1,5 +1,6 @@
 
 //pepcoding solution
+//gfg solution 
 
 
 class Solution
